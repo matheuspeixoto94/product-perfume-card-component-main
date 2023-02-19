@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--ff-secundary);
+}
+
+:root{
+    --bg-color: #ffe6c5;
+    --card-color: #fffcde;
+    --p-color: #857b73;
+    --h1: #282828;
+    --perfume-color: #897f78;
+    --current-price-button: #4e7a58;
+    --button-hover: hsl(156, 39%, 27%);
+
+    --ff-primary: 'Fraunces', serif;
+    --ff-secundary: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: var(--bg-color);
+}
+
+p{
+    font-size: 14px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 30px 30px;
+}
+
+.card{
+    background-color: var(--card-color);
+    display: flex;
+    max-width: 600px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.left{
+    width: 50%;
+}
+
+.left > img{
+    width: 100%;
+    height: 100%;
+}
+
+.right{
+    width: 50%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+.item-category{
+    color: var(--p-color);
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-bottom: 25px;
+}
+
+h1{
+    font-family: var(--ff-primary);
+    line-height: 32px;
+    margin-bottom: 25px;
+}
+
+.description{
+    color: var(--perfume-color);
+    line-height: 21px;
+    margin-bottom: 25px;
+}
+
+.prices{
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.current-price{
+    font-family: var(--ff-primary);
+    font-size: 30px;
+    margin-right: 20px;
+    color: var(--current-price-button);
+}
+
+.previous-price{
+    color: var(--p-color);
+    text-decoration: line-through;
+}
+
+button{
+    border: none;
+    background-color: var(--current-price-button);
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 17px;
+    transition: .2s;
+}
+
+button > img{
+    padding: 0 10px;
+}
+
+button:hover{
+    background-color: #36533c;
+    cursor: pointer;
+    transform: scale(1.005);
+}
